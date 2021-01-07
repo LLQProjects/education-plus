@@ -14,18 +14,18 @@ import Layout from './view/layout/index'
 import Order from './view/order'
 import Shopping from './view/shopping'
 import Login from './view/user/login'
-const NotFound = React.lazy(() => import('./view/error/404'));
+// const NotFound = React.lazy(() => import('./view/error/404'));
 function App() {
     return (
         <Router>
             <Switch>
-                <Route path="/login" component={Login}></Route>
+                <Route exact path="/login" component={Login}></Route>
                 <Layout>
-                    <Route exact path="/" component={Shopping}></Route>
+                    <Route path="/shopping" component={Shopping}></Route>
                     <Route path="/order" component={Order}></Route>
                 </Layout>
                 <Route path="*">
-                    <NotFound></NotFound>
+                    {/* <NotFound></NotFound> */}
                 </Route>
             </Switch>
         </Router>
