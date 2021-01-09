@@ -3,6 +3,14 @@
  */
 import { post, get } from '../utils/request'
 
-export async function login() {
-    await post('/api/login', params)
+/**
+ * @description 用户登录
+ * @param {Object} params 
+ */
+export async function login(params) {
+    return await post('/api/login', params)
 }
+
+/**
+ *
+ */

@@ -1,0 +1,46 @@
+.campus {
+    width: 900px;
+    margin: 0 auto;
+}
+.header {
+    
+}
+.createDiv {
+    position: relative;
+    height: 45px;
+    padding: 15px 20px;
+    line-height: 20px;
+    background: #f8f8f8;
+}
+.listWrap {
+    min-height: 560px;
+    background-color: #fff;
+    border: 5px solid #f8f8f8;
+    border-top: 1px solid #f8f8f8;
+    padding: 0 20px 10px;
+}
+.listItem {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 226px;
+    height: 117px;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 10px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    vertical-align: top;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+    border-top: 3px solid #e5e5e5;
+    border-radius: 2px;
+}
+.address {
+    color: #999;
+    margin-top: 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
